@@ -55,6 +55,8 @@ typedef struct _RaucSlot {
 	guint64 region_start;
 	/** size of both partitions(for boot-mbr-switch, boot-gpt-switch and boot-raw-fallback) */
 	guint64 region_size;
+	gchar *efi_loader;
+	gchar *efi_cmdline;
 
 	/** current state of the slot (runtime) */
 	SlotState state;
